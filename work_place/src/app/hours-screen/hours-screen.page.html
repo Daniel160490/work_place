@@ -1,45 +1,53 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
     </ion-buttons>
     <ion-title>Imputación de horas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <br>
   <!-- Hora de fin -->
   <ion-card>
     <ion-card-content>
-      <ion-label> Hora de inicio </ion-label>
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <input type="time">
-          </ion-col>
-          <ion-col>
-            <input type="date">
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+      <div class="centerContent">
+        <ion-label>
+          <ion-icon name="time-outline"></ion-icon> Hora de inicio
+        </ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <input type="time">
+            </ion-col>
+            <ion-col>
+              <input type="date">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
     </ion-card-content>
   </ion-card>
 
   <!-- Hora de inicio -->
   <ion-card>
     <ion-card-content>
-      <ion-label> Hora de fin </ion-label>
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <input type="time">
-          </ion-col>
-          <ion-col>
-            <input type="date">
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+      <div class="centerContent">
+        <ion-label class="centerContent">
+          <ion-icon name="time-outline"></ion-icon> Hora de fin
+        </ion-label>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <input type="time">
+              </ion-col>
+              <ion-col>
+                <input type="date">
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </div>
     </ion-card-content>
   </ion-card>
 
