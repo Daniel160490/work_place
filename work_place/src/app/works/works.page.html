@@ -1,5 +1,4 @@
 <ion-content>
-  <!-- <ion-searchbar animated="true" placeholder="Obras disponibles" show-clear-button="always" clear-icon="trash-bin"></ion-searchbar> -->
   <ion-infinite-scroll threshold="100px" >
     <ion-infinite-scroll-content oadingSpinner="bubbles" loadingText="Loading more data...">
       <ion-list>
@@ -43,18 +42,27 @@
   <!-- Imputación de otras horas no trabajadas -->
   <!-- TODO: Tener en cuenta los motivos por los que se imputan las horas -->
   <ion-card>
-    <ion-card-header> Otros motivos </ion-card-header>
-    <ion-card-content>
+    <ion-card-header> <strong> Otros motivos </strong>  </ion-card-header>
+    <ion-card-content class="centerContent">
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-button href="/hours-screen"> Vacaciones </ion-button>
+            <ion-button href="/hours-screen" icon-start>
+              <ion-icon name="boat-outline"></ion-icon>
+              Vacaciones
+            </ion-button>
           </ion-col>
           <ion-col>
-            <ion-button href="/hours-screen"> Asuntos propios </ion-button>
+            <ion-button href="/hours-screen" icon-start>
+              <ion-icon name="fitness-outline"></ion-icon>
+              Médico
+            </ion-button>
           </ion-col>
-          <ion-col>
-            <ion-button href="/hours-screen"> Médico </ion-button>
+          <ion-col style="text-align: center;">
+            <ion-button href="/hours-screen" icon-start>
+              <ion-icon name="help-circle-outline"></ion-icon>
+              Asuntos propios
+            </ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
