@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Administración </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <!-- Alta de empleados -->
+      <ion-col>
+        <ion-card>
+          <!-- <ion-card-title> Alta de empleados </ion-card-title> -->
+          <ion-card-content>
+            <p> Espacio para dar de alta a los empleados.</p>
+            <div class="centerContent">
+              <ion-button shape="round" color="primary">
+                <ion-icon name="add-circle-outline"></ion-icon>
+                Nuevo empleado
+              </ion-button>
+            </div>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <!-- Alta de nuevas obras -->
+      <ion-col>
+        <ion-card>
+          <!-- <ion-card-title> Alta de obras </ion-card-title> -->
+          <ion-card-content>
+            <p> Espacio para dar de alta nuevas obras.</p>
+            <div class="centerContent">
+              <ion-button shape="round" color="primary">
+                <ion-icon name="add-circle-outline"></ion-icon>
+                Nueva obra
+              </ion-button>
+            </div>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="divBtn">
+    <ion-button shape="round" (click)="goBack()"> Salir </ion-button>
+  </div>
+</ion-content>
