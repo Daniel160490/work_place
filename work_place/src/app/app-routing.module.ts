@@ -25,7 +25,11 @@ const routes: Routes = [
   {
     path: 'hours-screen',
     loadChildren: () => import('./hours-screen/hours-screen.module').then( m => m.HoursScreenPageModule)
+  },  {
+    path: 'admin-screen',
+    loadChildren: () => import('./admin-screen/admin-screen.module').then( m => m.AdminScreenPageModule)
   }
+
 ];
 @NgModule({
   imports: [
