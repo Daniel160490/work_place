@@ -1,0 +1,22 @@
+ion-content {
+    --padding-bottom: 20px;
+    --padding-end: 20px;
+    --padding-start: 20px;
+    --padding-top: 20px;
+}
+
+.text {
+    color: antiquewhite;
+    font-size: large;
+}
+
+
+.divVersion {
+    font-size: xx-small;
+    bottom: 0;
+    height: 34px;
+    padding: 13px 0 4px;
+    position: fixed;
+    width: 100%;
+    z-index: 5000;
+}
